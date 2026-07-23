@@ -1,0 +1,1866 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medbase Business LLC</title>
+    <meta
+      name="description"
+      content="Medbase Business LLC designs, builds, and scales custom software for businesses across industries — practical, reliable, tailored technology."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/logo-title.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="Medbase" class="brand-logo" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn--primary">Start a project</a>
+          <button
+            class="nav-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ====== HERO ====== -->
+      <section class="hero">
+        <!-- Grid background (with mouse reveal) -->
+        <svg
+          class="hero-grid-bg"
+          viewBox="0 0 1180 620"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              id="grid"
+              width="40"
+              height="40"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 40 0 L 0 0 0 40"
+                fill="none"
+                stroke="rgba(79,209,197,0.08)"
+                stroke-width="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="1180" height="620" fill="url(#grid)" />
+        </svg>
+
+        <!-- Hero canvas (3D particle wave) -->
+        <canvas id="hero-canvas"></canvas>
+
+        <!-- Floating code lines -->
+        <div class="hero-floating-code">
+          <span class="code-line" style="--i: 1"
+            >const app = new Medbase();</span
+          >
+          <span class="code-line" style="--i: 2"
+            >app.deploy({ strategy: "practical" });</span
+          >
+          <span class="code-line" style="--i: 3"
+            >const result = await app.build();</span
+          >
+          <span class="code-line" style="--i: 4"
+            >// → working software, on time</span
+          >
+          <span class="code-line" style="--i: 5"
+            >app.iterate(response.feedback);</span
+          >
+          <span class="code-line" style="--i: 6"
+            >console.log("shipped 🚀");</span
+          >
+        </div>
+
+        <!-- Floating geometric shapes -->
+        <div class="hero-shapes">
+          <div class="hero-shape shape-triangle"></div>
+          <div class="hero-shape shape-hexagon"></div>
+          <div class="hero-shape shape-circle"></div>
+          <div class="hero-shape shape-square"></div>
+        </div>
+
+        <div class="container">
+          <div class="hero-inner">
+            <div>
+              <span class="eyebrow">
+                <span class="terminal-line">
+                  <span class="terminal-prompt">❯</span>
+                  <span class="terminal-command"
+                    >SOFTWARE CONSULTING, APPLIED PRACTICALLY</span
+                  >
+                  <span class="terminal-cursor" aria-hidden="true">▊</span>
+                </span>
+              </span>
+              <h1 class="hero-title">
+                <span
+                  class="hero-title-line"
+                  data-text="We turn business requirements"
+                  >We turn business requirements</span
+                >
+                <span
+                  class="hero-title-line accent"
+                  data-text="into working software."
+                  >into <em>working software</em>.</span
+                >
+              </h1>
+              <p class="hero-sub">
+                Medbase Business LLC designs, builds, and maintains custom
+                software for companies across industries — engineered to be
+                efficient, scalable, and reliable, not just impressive on a
+                slide.
+              </p>
+              <div class="hero-actions">
+                <a href="contact.html" class="btn btn--primary"
+                  >Start a project →</a
+                >
+                <a href="about.html" class="btn btn--ghost">How we work</a>
+              </div>
+              <div class="hero-stats">
+                <div
+                  class="hero-stat counter-up"
+                  data-target="12"
+                  data-suffix="+"
+                >
+                  <span class="num">0</span>
+                  <span class="label">INDUSTRIES SERVED</span>
+                </div>
+                <div
+                  class="hero-stat counter-up"
+                  data-target="100"
+                  data-suffix="%"
+                >
+                  <span class="num">0</span>
+                  <span class="label">TAILORED BUILDS</span>
+                </div>
+                <div
+                  class="hero-stat counter-up"
+                  data-target="24"
+                  data-suffix="/7"
+                >
+                  <span class="num">0</span>
+                  <span class="label">SUPPORT WINDOW</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-art">
+              <svg
+                viewBox="0 0 600 520"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Software engineering dashboard"
+              >
+                <defs>
+                  <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop
+                      offset="0%"
+                      stop-color="#0d1f38"
+                      stop-opacity="0.92"
+                    />
+                    <stop
+                      offset="100%"
+                      stop-color="#060e1a"
+                      stop-opacity="0.98"
+                    />
+                  </linearGradient>
+                  <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#4fd1c5" />
+                    <stop offset="100%" stop-color="#88e8e0" />
+                  </linearGradient>
+                  <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#1e5fa8" />
+                    <stop offset="100%" stop-color="#3a8fd4" />
+                  </linearGradient>
+                  <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#10b981" />
+                    <stop offset="100%" stop-color="#34d399" />
+                  </linearGradient>
+                  <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#7c3aed" />
+                    <stop offset="100%" stop-color="#a78bfa" />
+                  </linearGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="3" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <filter id="glowStrong">
+                    <feGaussianBlur stdDeviation="5" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <filter id="glowSoft">
+                    <feGaussianBlur stdDeviation="8" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+
+                <!-- Outer glow border (animated) -->
+                <rect
+                  x="-2"
+                  y="-2"
+                  width="604"
+                  height="524"
+                  rx="18"
+                  fill="none"
+                  stroke="#4fd1c5"
+                  stroke-width="1"
+                  opacity="0.08"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="0.04;0.12;0.04"
+                    dur="4s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+                <rect
+                  x="-1"
+                  y="-1"
+                  width="602"
+                  height="522"
+                  rx="17"
+                  fill="none"
+                  stroke="url(#cyanGrad)"
+                  stroke-width="1"
+                  opacity="0"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="0;0.07;0"
+                    dur="4s"
+                    begin="1s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <rect
+                  x="0"
+                  y="0"
+                  width="600"
+                  height="520"
+                  rx="16"
+                  fill="url(#bgGrad)"
+                />
+                <rect
+                  x="0"
+                  y="0"
+                  width="600"
+                  height="520"
+                  rx="16"
+                  fill="none"
+                  stroke="rgba(79,209,197,0.06)"
+                  stroke-width="1"
+                />
+
+                <!-- Top animated scanline -->
+                <rect
+                  x="0"
+                  y="0"
+                  width="600"
+                  height="2"
+                  fill="url(#cyanGrad)"
+                  opacity="0.3"
+                >
+                  <animate
+                    attributeName="y"
+                    values="0;520;0"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                  <animate
+                    attributeName="opacity"
+                    values="0.3;0.6;0.3"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <!-- Live badge -->
+                <g transform="translate(440, 14)">
+                  <rect
+                    x="0"
+                    y="0"
+                    width="140"
+                    height="28"
+                    rx="6"
+                    fill="rgba(16,185,129,0.08)"
+                    stroke="rgba(16,185,129,0.15)"
+                    stroke-width="0.5"
+                  />
+                  <circle cx="14" cy="14" r="4" fill="#10b981">
+                    <animate
+                      attributeName="opacity"
+                      values="1;0.2;1"
+                      dur="1.5s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <text
+                    x="26"
+                    y="18"
+                    fill="#10b981"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="9"
+                    font-weight="500"
+                  >
+                    LIVE • system.idle
+                  </text>
+                </g>
+
+                <!-- Top bar -->
+                <rect
+                  x="20"
+                  y="14"
+                  width="560"
+                  height="28"
+                  rx="6"
+                  fill="rgba(255,255,255,0.03)"
+                  stroke="rgba(255,255,255,0.04)"
+                  stroke-width="0.5"
+                />
+                <circle cx="32" cy="28" r="4" fill="#ef4444" opacity="0.8">
+                  <animate
+                    attributeName="opacity"
+                    values="0.8;0.4;0.8"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+                <circle cx="46" cy="28" r="4" fill="#f59e0b" opacity="0.8" />
+                <circle cx="60" cy="28" r="4" fill="#10b981" opacity="0.8" />
+                <rect
+                  x="78"
+                  y="14"
+                  width="120"
+                  height="28"
+                  rx="6"
+                  fill="rgba(79,209,197,0.08)"
+                />
+                <text
+                  x="90"
+                  y="33"
+                  fill="#4fd1c5"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="10"
+                  font-weight="500"
+                >
+                  project.tsx
+                </text>
+                <text
+                  x="196"
+                  y="33"
+                  fill="rgba(255,255,255,0.15)"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="9"
+                >
+                  package.json
+                </text>
+                <text
+                  x="288"
+                  y="33"
+                  fill="rgba(255,255,255,0.15)"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="9"
+                >
+                  README.md
+                </text>
+
+                <!-- Time badge -->
+                <g transform="translate(540, 450)">
+                  <text
+                    id="hero-clock"
+                    fill="rgba(79,209,197,0.3)"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="7"
+                    text-anchor="end"
+                  >
+                    --:--:--
+                  </text>
+                </g>
+
+                <!-- Left panel: Code -->
+                <rect
+                  x="20"
+                  y="50"
+                  width="280"
+                  height="260"
+                  rx="6"
+                  fill="rgba(255,255,255,0.02)"
+                  stroke="rgba(255,255,255,0.04)"
+                  stroke-width="0.5"
+                />
+                <!-- Animated glowing corner -->
+                <rect
+                  x="20"
+                  y="50"
+                  width="280"
+                  height="260"
+                  rx="6"
+                  fill="none"
+                  stroke="url(#cyanGrad)"
+                  stroke-width="1"
+                  opacity="0"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="0;0.08;0"
+                    dur="5s"
+                    begin="0.5s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <!-- Code lines with syntax highlighting -->
+                <g font-family="JetBrains Mono, monospace" font-size="9.5">
+                  <text x="40" y="75" fill="#c084fc">import</text>
+                  <text x="62" y="75" fill="#e2e8f0">{</text>
+                  <text x="76" y="75" fill="#fbbf24">AppProvider</text>
+                  <text x="124" y="75" fill="#e2e8f0">,</text>
+                  <text x="136" y="75" fill="#fbbf24">useAuth</text>
+                  <text x="168" y="75" fill="#e2e8f0">}</text>
+                  <text x="176" y="75" fill="#c084fc">from</text>
+                  <text x="198" y="75" fill="#4fd1c5">'./core'</text>
+                  <text x="228" y="75" fill="rgba(255,255,255,0.2)">;</text>
+
+                  <text x="40" y="91" fill="#c084fc">import</text>
+                  <text x="62" y="91" fill="#e2e8f0">{</text>
+                  <text x="76" y="91" fill="#fbbf24">Database</text>
+                  <text x="112" y="91" fill="#e2e8f0">,</text>
+                  <text x="124" y="91" fill="#fbbf24">Cache</text>
+                  <text x="148" y="91" fill="#e2e8f0">}</text>
+                  <text x="156" y="91" fill="#c084fc">from</text>
+                  <text x="178" y="91" fill="#4fd1c5">'./services'</text>
+                  <text x="220" y="91" fill="rgba(255,255,255,0.2)">;</text>
+
+                  <text x="40" y="123" fill="#60a5fa">const</text>
+                  <text x="64" y="123" fill="#e2e8f0"></text>
+                  <text x="72" y="123" fill="#fbbf24">App</text>
+                  <text x="94" y="123" fill="#e2e8f0">:</text>
+                  <text x="100" y="123" fill="#60a5fa">FC</text>
+                  <text x="116" y="123" fill="#e2e8f0">= ()</text>
+                  <text x="136" y="123" fill="#c084fc">=></text>
+                  <text x="148" y="123" fill="#e2e8f0">{</text>
+
+                  <text x="52" y="139" fill="#60a5fa">const</text>
+                  <text x="76" y="139" fill="#e2e8f0">{</text>
+                  <text x="88" y="139" fill="#fbbf24">user</text>
+                  <text x="108" y="139" fill="#e2e8f0">,</text>
+                  <text x="116" y="139" fill="#fbbf24">isLoading</text>
+                  <text x="152" y="139" fill="#e2e8f0">} =</text>
+                  <text x="172" y="139" fill="#fbbf24">useAuth</text>
+                  <text x="204" y="139" fill="#e2e8f0">();</text>
+
+                  <text x="52" y="155" fill="#60a5fa">const</text>
+                  <text x="76" y="155" fill="#e2e8f0">[</text>
+                  <text x="84" y="155" fill="#fbbf24">data</text>
+                  <text x="104" y="155" fill="#e2e8f0">,</text>
+                  <text x="112" y="155" fill="#fbbf24">setData</text>
+                  <text x="144" y="155" fill="#e2e8f0">] =</text>
+                  <text x="160" y="155" fill="#fbbf24">useState</text>
+                  <text x="196" y="155" fill="#e2e8f0">([]);</text>
+
+                  <text x="52" y="171" fill="#e2e8f0" opacity="0.4">
+                    // Fetch & cache data
+                  </text>
+
+                  <text x="52" y="187" fill="#fbbf24">useEffect</text>
+                  <text x="100" y="187" fill="#e2e8f0">(()</text>
+                  <text x="116" y="187" fill="#c084fc">=></text>
+                  <text x="128" y="187" fill="#e2e8f0">{</text>
+
+                  <text x="64" y="203" fill="#60a5fa">const</text>
+                  <text x="88" y="203" fill="#e2e8f0"></text>
+                  <text x="96" y="203" fill="#fbbf24">result</text>
+                  <text x="120" y="203" fill="#e2e8f0">=</text>
+                  <text x="136" y="203" fill="#c084fc">await</text>
+                  <text x="160" y="203" fill="#fbbf24">api</text>
+                  <text x="188" y="203" fill="#e2e8f0">.</text>
+                  <text x="196" y="203" fill="#fbbf24">fetch</text>
+                  <text x="220" y="203" fill="#e2e8f0">();</text>
+
+                  <text x="64" y="219" fill="#fbbf24">setData</text>
+                  <text x="100" y="219" fill="#e2e8f0">(</text>
+                  <text x="108" y="219" fill="#fbbf24">result</text>
+                  <text x="132" y="219" fill="#e2e8f0">);</text>
+
+                  <text x="52" y="235" fill="#e2e8f0">}, []);</text>
+
+                  <text x="40" y="267" fill="#c084fc">return</text>
+                  <text x="64" y="267" fill="#e2e8f0">(</text>
+
+                  <text x="52" y="283" fill="#e2e8f0" opacity="0.5"><</text>
+                  <text x="60" y="283" fill="#60a5fa" opacity="0.7">
+                    Dashboard
+                  </text>
+                  <text x="120" y="283" fill="#fbbf24" opacity="0.7">user</text>
+                  <text x="140" y="283" fill="#e2e8f0" opacity="0.5">=</text>
+                  <text x="148" y="283" fill="#4fd1c5" opacity="0.7">
+                    {user}
+                  </text>
+                  <text x="176" y="283" fill="#e2e8f0" opacity="0.5">/></text>
+
+                  <text x="40" y="299" fill="#e2e8f0">);</text>
+                </g>
+
+                <!-- Cursor blink -->
+                <rect
+                  x="44"
+                  y="299"
+                  width="1.5"
+                  height="11"
+                  fill="#4fd1c5"
+                  opacity="0.8"
+                >
+                  <animate
+                    attributeName="opacity"
+                    values="0.8;0;0.8"
+                    dur="1s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+
+                <!-- Right panel: Infrastructure -->
+                <rect
+                  x="310"
+                  y="50"
+                  width="270"
+                  height="260"
+                  rx="6"
+                  fill="rgba(255,255,255,0.02)"
+                  stroke="rgba(255,255,255,0.04)"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="310"
+                  y="50"
+                  width="270"
+                  height="28"
+                  rx="6"
+                  fill="rgba(79,209,197,0.04)"
+                />
+                <text
+                  x="330"
+                  y="68"
+                  fill="rgba(255,255,255,0.4)"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="9"
+                >
+                  infrastructure
+                  <tspan fill="rgba(79,209,197,0.5)">● online</tspan>
+                </text>
+
+                <!-- Server rows with staggered animations -->
+                <g transform="translate(325, 90)">
+                  <rect
+                    x="0"
+                    y="0"
+                    width="240"
+                    height="32"
+                    rx="4"
+                    fill="rgba(255,255,255,0.03)"
+                    stroke="rgba(79,209,197,0.08)"
+                    stroke-width="0.5"
+                  />
+                  <rect
+                    x="8"
+                    y="8"
+                    width="16"
+                    height="16"
+                    rx="3"
+                    fill="rgba(79,209,197,0.15)"
+                  />
+                  <circle
+                    cx="16"
+                    cy="16"
+                    r="3"
+                    fill="#4fd1c5"
+                    filter="url(#glow)"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0.3;1"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <text
+                    x="34"
+                    y="21"
+                    fill="#e2e8f0"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="10"
+                  >
+                    api-server-01
+                  </text>
+                  <text
+                    x="170"
+                    y="21"
+                    fill="#10b981"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="9"
+                  >
+                    UP
+                  </text>
+                  <rect
+                    x="200"
+                    y="10"
+                    width="30"
+                    height="12"
+                    rx="3"
+                    fill="rgba(16,185,129,0.15)"
+                  />
+                </g>
+
+                <g transform="translate(325, 128)" style="opacity: 0">
+                  <animate
+                    attributeName="opacity"
+                    values="0;1"
+                    dur="0.5s"
+                    begin="0.2s"
+                    fill="freeze"
+                  />
+                  <rect
+                    x="0"
+                    y="0"
+                    width="240"
+                    height="32"
+                    rx="4"
+                    fill="rgba(255,255,255,0.03)"
+                    stroke="rgba(79,209,197,0.08)"
+                    stroke-width="0.5"
+                  />
+                  <rect
+                    x="8"
+                    y="8"
+                    width="16"
+                    height="16"
+                    rx="3"
+                    fill="rgba(16,185,129,0.15)"
+                  />
+                  <circle
+                    cx="16"
+                    cy="16"
+                    r="3"
+                    fill="#10b981"
+                    filter="url(#glow)"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0.3;1"
+                      dur="2.5s"
+                      begin="0.5s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <text
+                    x="34"
+                    y="21"
+                    fill="#e2e8f0"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="10"
+                  >
+                    db-primary-01
+                  </text>
+                  <text
+                    x="170"
+                    y="21"
+                    fill="#10b981"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="9"
+                  >
+                    UP
+                  </text>
+                  <rect
+                    x="200"
+                    y="10"
+                    width="30"
+                    height="12"
+                    rx="3"
+                    fill="rgba(16,185,129,0.15)"
+                  />
+                </g>
+
+                <g transform="translate(325, 166)" style="opacity: 0">
+                  <animate
+                    attributeName="opacity"
+                    values="0;1"
+                    dur="0.5s"
+                    begin="0.4s"
+                    fill="freeze"
+                  />
+                  <rect
+                    x="0"
+                    y="0"
+                    width="240"
+                    height="32"
+                    rx="4"
+                    fill="rgba(255,255,255,0.03)"
+                    stroke="rgba(79,209,197,0.08)"
+                    stroke-width="0.5"
+                  />
+                  <rect
+                    x="8"
+                    y="8"
+                    width="16"
+                    height="16"
+                    rx="3"
+                    fill="rgba(245,158,11,0.12)"
+                  />
+                  <circle cx="16" cy="16" r="3" fill="#f59e0b">
+                    <animate
+                      attributeName="opacity"
+                      values="1;0.3;1"
+                      dur="3s"
+                      begin="1s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <text
+                    x="34"
+                    y="21"
+                    fill="#e2e8f0"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="10"
+                  >
+                    cache-cluster-01
+                  </text>
+                  <text
+                    x="170"
+                    y="21"
+                    fill="#f59e0b"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="9"
+                  >
+                    WARN
+                  </text>
+                  <rect
+                    x="200"
+                    y="10"
+                    width="30"
+                    height="12"
+                    rx="3"
+                    fill="rgba(245,158,11,0.15)"
+                  />
+                </g>
+
+                <g transform="translate(325, 204)" style="opacity: 0">
+                  <animate
+                    attributeName="opacity"
+                    values="0;1"
+                    dur="0.5s"
+                    begin="0.6s"
+                    fill="freeze"
+                  />
+                  <rect
+                    x="0"
+                    y="0"
+                    width="240"
+                    height="32"
+                    rx="4"
+                    fill="rgba(255,255,255,0.03)"
+                    stroke="rgba(79,209,197,0.08)"
+                    stroke-width="0.5"
+                  />
+                  <rect
+                    x="8"
+                    y="8"
+                    width="16"
+                    height="16"
+                    rx="3"
+                    fill="rgba(59,130,246,0.12)"
+                  />
+                  <circle
+                    cx="16"
+                    cy="16"
+                    r="3"
+                    fill="#3b82f6"
+                    filter="url(#glow)"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0.3;1"
+                      dur="1.8s"
+                      begin="0.3s"
+                      repeatCount="indefinite"
+                    />
+                  </circle>
+                  <text
+                    x="34"
+                    y="21"
+                    fill="#e2e8f0"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="10"
+                  >
+                    worker-pool-01
+                  </text>
+                  <text
+                    x="170"
+                    y="21"
+                    fill="#10b981"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="9"
+                  >
+                    UP
+                  </text>
+                  <rect
+                    x="200"
+                    y="10"
+                    width="30"
+                    height="12"
+                    rx="3"
+                    fill="rgba(16,185,129,0.15)"
+                  />
+                </g>
+
+                <!-- CPU/MEM -->
+                <g transform="translate(325, 248)">
+                  <text
+                    x="0"
+                    y="10"
+                    fill="rgba(255,255,255,0.35)"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="8"
+                  >
+                    CPU
+                  </text>
+                  <rect
+                    x="30"
+                    y="3"
+                    width="150"
+                    height="6"
+                    rx="3"
+                    fill="rgba(255,255,255,0.05)"
+                  />
+                  <rect
+                    x="30"
+                    y="3"
+                    width="95"
+                    height="6"
+                    rx="3"
+                    fill="url(#cyanGrad)"
+                    opacity="0.6"
+                  >
+                    <animate
+                      attributeName="width"
+                      values="95;110;95"
+                      dur="4s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                  <text
+                    x="190"
+                    y="10"
+                    fill="rgba(255,255,255,0.3)"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="8"
+                  >
+                    64%
+                  </text>
+
+                  <text
+                    x="0"
+                    y="24"
+                    fill="rgba(255,255,255,0.35)"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="8"
+                  >
+                    MEM
+                  </text>
+                  <rect
+                    x="30"
+                    y="17"
+                    width="150"
+                    height="6"
+                    rx="3"
+                    fill="rgba(255,255,255,0.05)"
+                  />
+                  <rect
+                    x="30"
+                    y="17"
+                    width="120"
+                    height="6"
+                    rx="3"
+                    fill="url(#blueGrad)"
+                    opacity="0.6"
+                  >
+                    <animate
+                      attributeName="width"
+                      values="120;130;120"
+                      dur="5s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                  <text
+                    x="190"
+                    y="24"
+                    fill="rgba(255,255,255,0.3)"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="8"
+                  >
+                    78%
+                  </text>
+                </g>
+
+                <!-- Bottom: Git + CI -->
+                <rect
+                  x="20"
+                  y="320"
+                  width="560"
+                  height="88"
+                  rx="6"
+                  fill="rgba(255,255,255,0.02)"
+                  stroke="rgba(255,255,255,0.04)"
+                  stroke-width="0.5"
+                />
+                <path
+                  d="M60 360 L140 360"
+                  stroke="#4fd1c5"
+                  stroke-width="2"
+                  fill="none"
+                  opacity="0.4"
+                />
+                <circle
+                  cx="60"
+                  cy="360"
+                  r="5"
+                  fill="#4fd1c5"
+                  filter="url(#glow)"
+                />
+                <circle
+                  cx="100"
+                  cy="360"
+                  r="4"
+                  fill="rgba(79,209,197,0.3)"
+                  stroke="#4fd1c5"
+                  stroke-width="1"
+                />
+                <circle
+                  cx="140"
+                  cy="360"
+                  r="4"
+                  fill="rgba(79,209,197,0.3)"
+                  stroke="#4fd1c5"
+                  stroke-width="1"
+                />
+
+                <path
+                  d="M80 360 L80 340"
+                  stroke="#a78bfa"
+                  stroke-width="1.5"
+                  fill="none"
+                  opacity="0.5"
+                />
+                <path
+                  d="M80 340 L160 340"
+                  stroke="#a78bfa"
+                  stroke-width="1.5"
+                  fill="none"
+                  opacity="0.5"
+                />
+                <circle
+                  cx="120"
+                  cy="340"
+                  r="4"
+                  fill="rgba(167,139,250,0.3)"
+                  stroke="#a78bfa"
+                  stroke-width="1"
+                />
+                <circle
+                  cx="160"
+                  cy="340"
+                  r="5"
+                  fill="#a78bfa"
+                  filter="url(#glow)"
+                />
+                <path
+                  d="M160 340 L160 355 L140 355"
+                  stroke="#a78bfa"
+                  stroke-width="1.5"
+                  fill="none"
+                  opacity="0.5"
+                />
+
+                <text
+                  x="60"
+                  y="380"
+                  fill="#4fd1c5"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="7"
+                  text-anchor="middle"
+                  opacity="0.6"
+                >
+                  main
+                </text>
+                <text
+                  x="120"
+                  y="332"
+                  fill="#a78bfa"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="7"
+                  text-anchor="middle"
+                  opacity="0.6"
+                >
+                  feature/auth
+                </text>
+
+                <g
+                  font-family="JetBrains Mono, monospace"
+                  font-size="7"
+                  fill="rgba(255,255,255,0.3)"
+                >
+                  <text x="200" y="356">⚡ 5d23f1a init project structure</text>
+                  <text x="200" y="370">🔧 8e4b2c0 configure CI workflow</text>
+                  <text x="200" y="384">✨ 3f7a1e9 add auth middleware</text>
+                </g>
+
+                <!-- CI badges -->
+                <g transform="translate(200, 388)">
+                  <rect
+                    x="0"
+                    y="0"
+                    width="60"
+                    height="16"
+                    rx="4"
+                    fill="rgba(16,185,129,0.12)"
+                  />
+                  <circle cx="10" cy="8" r="3" fill="#10b981" />
+                  <text
+                    x="20"
+                    y="11"
+                    fill="#10b981"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="7"
+                  >
+                    build
+                  </text>
+                </g>
+                <g transform="translate(270, 388)">
+                  <rect
+                    x="0"
+                    y="0"
+                    width="60"
+                    height="16"
+                    rx="4"
+                    fill="rgba(59,130,246,0.12)"
+                  />
+                  <circle cx="10" cy="8" r="3" fill="#3b82f6" />
+                  <text
+                    x="20"
+                    y="11"
+                    fill="#3b82f6"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="7"
+                  >
+                    tests
+                  </text>
+                </g>
+                <g transform="translate(340, 388)">
+                  <rect
+                    x="0"
+                    y="0"
+                    width="70"
+                    height="16"
+                    rx="4"
+                    fill="rgba(79,209,197,0.12)"
+                  />
+                  <circle
+                    cx="10"
+                    cy="8"
+                    r="3"
+                    fill="#4fd1c5"
+                    filter="url(#glow)"
+                  />
+                  <text
+                    x="20"
+                    y="11"
+                    fill="#4fd1c5"
+                    font-family="JetBrains Mono, monospace"
+                    font-size="7"
+                  >
+                    deploy
+                  </text>
+                </g>
+
+                <!-- Sprint progress -->
+                <rect
+                  x="20"
+                  y="418"
+                  width="560"
+                  height="18"
+                  rx="9"
+                  fill="rgba(255,255,255,0.02)"
+                  stroke="rgba(255,255,255,0.04)"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="22"
+                  y="419"
+                  width="370"
+                  height="16"
+                  rx="8"
+                  fill="url(#cyanGrad)"
+                  opacity="0.15"
+                />
+                <rect
+                  x="22"
+                  y="419"
+                  width="260"
+                  height="16"
+                  rx="8"
+                  fill="url(#cyanGrad)"
+                  opacity="0.3"
+                >
+                  <animate
+                    attributeName="width"
+                    values="260;320;260"
+                    dur="6s"
+                    repeatCount="indefinite"
+                  />
+                </rect>
+                <text
+                  x="30"
+                  y="431"
+                  fill="#4fd1c5"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="8"
+                  opacity="0.6"
+                >
+                  Sprint progress: 68%
+                </text>
+                <text
+                  x="540"
+                  y="431"
+                  fill="rgba(255,255,255,0.2)"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="7"
+                >
+                  sprint-24
+                </text>
+
+                <!-- Status bar -->
+                <rect
+                  x="20"
+                  y="446"
+                  width="560"
+                  height="26"
+                  rx="6"
+                  fill="rgba(255,255,255,0.02)"
+                  stroke="rgba(255,255,255,0.03)"
+                  stroke-width="0.5"
+                />
+                <circle cx="35" cy="459" r="3" fill="#10b981">
+                  <animate
+                    attributeName="opacity"
+                    values="1;0.3;1"
+                    dur="1.5s"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+                <text
+                  x="48"
+                  y="462"
+                  fill="rgba(255,255,255,0.35)"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="8"
+                >
+                  All systems operational
+                </text>
+                <text
+                  x="220"
+                  y="462"
+                  fill="rgba(255,255,255,0.2)"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="8"
+                >
+                  ⏱ uptime 99.97%
+                </text>
+                <text
+                  x="340"
+                  y="462"
+                  fill="rgba(255,255,255,0.2)"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="8"
+                >
+                  📦 v1.4.2
+                </text>
+                <text
+                  x="440"
+                  y="462"
+                  fill="rgba(255,255,255,0.2)"
+                  font-family="JetBrains Mono, monospace"
+                  font-size="8"
+                >
+                  ⚡ 0 active alerts
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGO / TRUST STRIP -->
+      <section class="industries-premium section-reveal">
+        <div class="container">
+          <div class="industries-head">
+            <p class="industry-kicker">INDUSTRIES WE BUILD FOR</p>
+            <h2>
+              Powering Every Industry<br /><span
+                >with Intelligent Software Solutions</span
+              >
+            </h2>
+            <p class="industry-desc">
+              Custom software engineered for growth, automation, and operational
+              excellence across modern industries.
+            </p>
+          </div>
+          <div class="industry-grid-premium">
+            <div class="industry-box">
+              🏥
+              <h3>Healthcare</h3>
+            </div>
+            <div class="industry-box">
+              🚚
+              <h3>Logistics</h3>
+            </div>
+            <div class="industry-box">
+              🛒
+              <h3>Retail & Commerce</h3>
+            </div>
+            <div class="industry-box">
+              🏦
+              <h3>Financial Services</h3>
+            </div>
+            <div class="industry-box">
+              🏭
+              <h3>Manufacturing</h3>
+            </div>
+            <div class="industry-box">
+              💼
+              <h3>Professional Services</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section-reveal">
+        <div class="container">
+          <div class="section-head">
+            <p class="industry-kicker">WHAT WE BUILD</p>
+            <h2>Software that fits how your business actually runs</h2>
+            <p>
+              No off-the-shelf compromises. Every engagement starts with your
+              workflow, not a template.
+            </p>
+          </div>
+          <div class="grid-3">
+            <div class="card tilt-card">
+              <svg class="card-icon" viewBox="0 0 40 40" fill="none">
+                <rect
+                  x="5"
+                  y="5"
+                  width="30"
+                  height="30"
+                  rx="6"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M13 20h14M20 13v14"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="tag">01 — CUSTOM DEVELOPMENT</span>
+              <h3>Bespoke applications</h3>
+              <p>
+                Web and internal software built around your exact processes,
+                from first workflow map to production release.
+              </p>
+            </div>
+            <div class="card tilt-card">
+              <svg class="card-icon" viewBox="0 0 40 40" fill="none">
+                <path
+                  d="M8 30V16M20 30V8M32 30V22"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="tag">02 — SYSTEM INTEGRATION</span>
+              <h3>Connected systems</h3>
+              <p>
+                We link the tools you already use — CRMs, ERPs, payment rails —
+                so data moves without manual re-entry.
+              </p>
+            </div>
+            <div class="card tilt-card">
+              <svg class="card-icon" viewBox="0 0 40 40" fill="none">
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="13"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M20 13v7l5 3"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="tag">03 — MODERNIZATION</span>
+              <h3>Legacy upgrades</h3>
+              <p>
+                We refactor aging systems into maintainable, scalable platforms
+                without disrupting daily operations.
+              </p>
+            </div>
+            <div class="card tilt-card">
+              <svg class="card-icon" viewBox="0 0 40 40" fill="none">
+                <rect
+                  x="6"
+                  y="10"
+                  width="28"
+                  height="20"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path d="M6 16h28" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+              <span class="tag">04 — CLOUD & INFRASTRUCTURE</span>
+              <h3>Reliable deployment</h3>
+              <p>
+                Cloud architecture sized to your actual load — built to stay up,
+                and to scale when you need it to.
+              </p>
+            </div>
+            <div class="card tilt-card">
+              <svg class="card-icon" viewBox="0 0 40 40" fill="none">
+                <path
+                  d="M20 6l4 8 9 1-6.5 6 1.5 9-8-4.5-8 4.5 1.5-9L7 15l9-1z"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="tag">05 — QUALITY & SUPPORT</span>
+              <h3>Ongoing reliability</h3>
+              <p>
+                Testing, monitoring, and a real support line after launch —
+                software is a relationship, not a handoff.
+              </p>
+            </div>
+            <div class="card tilt-card">
+              <svg class="card-icon" viewBox="0 0 40 40" fill="none">
+                <path
+                  d="M8 26l8-14 8 10 8-16"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="tag">06 — PRODUCT STRATEGY</span>
+              <h3>Technical advisory</h3>
+              <p>
+                Not sure what to build yet? We help scope, prioritize, and
+                de-risk the roadmap before writing code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section
+        class="bg-dim section-reveal"
+        style="position: relative; overflow: hidden"
+      >
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(
+              circle,
+              rgba(79, 209, 197, 0.03),
+              transparent 70%
+            );
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(100px, -100px);
+          "
+        ></div>
+        <div
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(
+              circle,
+              rgba(30, 95, 168, 0.03),
+              transparent 70%
+            );
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50px, 50px);
+          "
+        ></div>
+        <div class="container" style="position: relative; z-index: 1">
+          <div
+            class="section-head"
+            style="text-align: center; max-width: 800px; margin: 0 auto 60px"
+          >
+            <p class="eyebrow eyebrow--dark" style="justify-content: center">
+              <span class="terminal-line terminal-line--dark">
+                <span class="terminal-prompt">❯</span>
+                <span class="terminal-command">HOW AN ENGAGEMENT RUNS</span>
+                <span class="terminal-cursor" aria-hidden="true">▊</span>
+              </span>
+            </p>
+            <h2>A practical process, start to support</h2>
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 16px;
+              margin-bottom: 40px;
+            "
+          >
+            <!-- Step 1 -->
+            <div
+              style="
+                background: var(--white);
+                border: 1px solid var(--line);
+                border-radius: var(--radius-m);
+                padding: 32px 20px 24px;
+                text-align: center;
+                position: relative;
+                transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 3px;
+                  background: linear-gradient(90deg, #4fd1c5, #88e8e0);
+                  border-radius: 8px 8px 0 0;
+                "
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.4;1;0.4"
+                  dur="3s"
+                  repeatCount="indefinite"
+                />
+              </div>
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  border-radius: 50%;
+                  background: rgba(79, 209, 197, 0.08);
+                  border: 2px solid #4fd1c5;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 14px;
+                "
+              >
+                <span
+                  style="
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #4fd1c5;
+                  "
+                  >01</span
+                >
+              </div>
+              <span
+                class="tag"
+                style="
+                  display: inline-block;
+                  padding: 3px 12px;
+                  background: rgba(79, 209, 197, 0.08);
+                  border-radius: 20px;
+                  color: #4fd1c5;
+                  font-weight: 600;
+                  margin-bottom: 10px;
+                "
+                >DISCOVER</span
+              >
+              <h3 style="font-size: var(--step-1); margin: 0 0 10px">
+                Understand the workflow
+              </h3>
+              <p
+                style="
+                  margin: 0;
+                  font-size: var(--step--1);
+                  color: var(--slate);
+                "
+              >
+                We map how your team actually works today, and where software is
+                helping or getting in the way.
+              </p>
+            </div>
+            <!-- Step 2 -->
+            <div
+              style="
+                background: var(--white);
+                border: 1px solid var(--line);
+                border-radius: var(--radius-m);
+                padding: 32px 20px 24px;
+                text-align: center;
+                position: relative;
+                transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 3px;
+                  background: linear-gradient(90deg, #3a8fd4, #1e5fa8);
+                  border-radius: 8px 8px 0 0;
+                "
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.4;1;0.4"
+                  dur="3s"
+                  begin="0.75s"
+                  repeatCount="indefinite"
+                />
+              </div>
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  border-radius: 50%;
+                  background: rgba(58, 143, 212, 0.08);
+                  border: 2px solid #3a8fd4;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 14px;
+                "
+              >
+                <span
+                  style="
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #3a8fd4;
+                  "
+                  >02</span
+                >
+              </div>
+              <span
+                class="tag"
+                style="
+                  display: inline-block;
+                  padding: 3px 12px;
+                  background: rgba(58, 143, 212, 0.08);
+                  border-radius: 20px;
+                  color: #3a8fd4;
+                  font-weight: 600;
+                  margin-bottom: 10px;
+                "
+                >DESIGN</span
+              >
+              <h3 style="font-size: var(--step-1); margin: 0 0 10px">
+                Architect the system
+              </h3>
+              <p
+                style="
+                  margin: 0;
+                  font-size: var(--step--1);
+                  color: var(--slate);
+                "
+              >
+                We plan a solution sized to your scale — no unnecessary
+                complexity, no fragile shortcuts.
+              </p>
+            </div>
+            <!-- Step 3 -->
+            <div
+              style="
+                background: var(--white);
+                border: 1px solid var(--line);
+                border-radius: var(--radius-m);
+                padding: 32px 20px 24px;
+                text-align: center;
+                position: relative;
+                transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 3px;
+                  background: linear-gradient(90deg, #3a8fd4, #2a7fc8);
+                  border-radius: 8px 8px 0 0;
+                "
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.4;1;0.4"
+                  dur="3s"
+                  begin="1.5s"
+                  repeatCount="indefinite"
+                />
+              </div>
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  border-radius: 50%;
+                  background: rgba(58, 143, 212, 0.08);
+                  border: 2px solid #3a8fd4;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 14px;
+                "
+              >
+                <span
+                  style="
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #3a8fd4;
+                  "
+                  >03</span
+                >
+              </div>
+              <span
+                class="tag"
+                style="
+                  display: inline-block;
+                  padding: 3px 12px;
+                  background: rgba(58, 143, 212, 0.08);
+                  border-radius: 20px;
+                  color: #3a8fd4;
+                  font-weight: 600;
+                  margin-bottom: 10px;
+                "
+                >BUILD</span
+              >
+              <h3 style="font-size: var(--step-1); margin: 0 0 10px">
+                Ship in increments
+              </h3>
+              <p
+                style="
+                  margin: 0;
+                  font-size: var(--step--1);
+                  color: var(--slate);
+                "
+              >
+                You see working software early and often, with room to adjust
+                before it's locked in.
+              </p>
+            </div>
+            <!-- Step 4 -->
+            <div
+              style="
+                background: var(--white);
+                border: 1px solid var(--line);
+                border-radius: var(--radius-m);
+                padding: 32px 20px 24px;
+                text-align: center;
+                position: relative;
+                transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 3px;
+                  background: linear-gradient(90deg, #4fd1c5, #88e8e0);
+                  border-radius: 8px 8px 0 0;
+                "
+              >
+                <animate
+                  attributeName="opacity"
+                  values="0.4;1;0.4"
+                  dur="3s"
+                  begin="2.25s"
+                  repeatCount="indefinite"
+                />
+              </div>
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  border-radius: 50%;
+                  background: rgba(79, 209, 197, 0.08);
+                  border: 2px solid #4fd1c5;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 14px;
+                "
+              >
+                <span
+                  style="
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #4fd1c5;
+                  "
+                  >04</span
+                >
+              </div>
+              <span
+                class="tag"
+                style="
+                  display: inline-block;
+                  padding: 3px 12px;
+                  background: rgba(79, 209, 197, 0.08);
+                  border-radius: 20px;
+                  color: #4fd1c5;
+                  font-weight: 600;
+                  margin-bottom: 10px;
+                "
+                >SUPPORT</span
+              >
+              <h3 style="font-size: var(--step-1); margin: 0 0 10px">
+                Stay reliable
+              </h3>
+              <p
+                style="
+                  margin: 0;
+                  font-size: var(--step--1);
+                  color: var(--slate);
+                "
+              >
+                Post-launch monitoring, fixes, and enhancements — so the system
+                keeps working as you grow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section-reveal">
+        <div class="container">
+          <div class="cta-band">
+            <div>
+              <h2>Have a system that needs building?</h2>
+              <p>
+                Tell us what you're working on — we'll tell you honestly how
+                we'd approach it.
+              </p>
+            </div>
+            <a href="contact.html" class="btn btn--primary">Get in touch →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="brand">
+              <img src="assets/logo.png" alt="Medbase" class="brand-logo" />
+            </a>
+            <p>
+              Custom software consulting for businesses that need technology to
+              actually fit how they work.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h5>SITE</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>SERVICES</h5>
+            <ul>
+              <li><a href="index.html#services">Custom Development</a></li>
+              <li><a href="index.html#services">System Integration</a></li>
+              <li><a href="index.html#services">Modernization</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>CONTACT</h5>
+            <ul>
+              <li>
+                <a href="mailto:john@medbasesolutions.com"
+                  >john@medbasesolutions.com</a
+                >
+              </li>
+              <li><a href="tel:+10000000000">+1 (872) 204-7723</a></li>
+              <li>86 Venita Drive, Athens, GA 30606, USA</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Medbase Business LLC. All rights reserved.</span>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="X">X</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
