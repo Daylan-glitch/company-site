@@ -42,15 +42,32 @@ function normalizedPathname(pathname: string): string {
 
 function updateMetadata(page: PageDefinition): void {
   document.title = page.title;
+
   let description = document.querySelector<HTMLMetaElement>(
     'meta[name="description"]',
   );
+
   if (!description) {
     description = document.createElement("meta");
     description.name = "description";
     document.head.appendChild(description);
   }
+
   description.content = page.description;
+
+  // Remove any existing robots tag
+  document.querySelectorAll('meta[name="robots"]').forEach((el) => el.remove());
+
+  // Add noindex only for About and Contact
+  if (
+    window.location.pathname === "/about" ||
+    window.location.pathname === "/contact"
+  ) {
+    const robots = document.createElement("meta");
+    robots.name = "robots";
+    robots.content = "noindex, follow";
+    document.head.appendChild(robots);
+  }
 }
 
 export default function App() {
