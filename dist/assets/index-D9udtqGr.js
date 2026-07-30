@@ -10,7 +10,7 @@ Error generating stack: `+e.message+`
     <header class="site-header">
       <nav class="nav container">
         <a href="/" class="brand">
-          <img src="/assets/logo.png" alt="Medbase" class="brand-logo" />
+          <img src="/assets/logo.png" alt="Medbase Business LLC logo" class="brand-logo" />
         </a>
         <ul class="nav-links">
           <li><a href="/" aria-current="page">Home</a></li>
@@ -98,7 +98,7 @@ Error generating stack: `+e.message+`
                 <span class="terminal-line">
                   <span class="terminal-prompt">❯</span>
                   <span class="terminal-command"
-                    >SOFTWARE CONSULTING, APPLIED PRACTICALLY</span
+                    >SOFTWARE DEVELOPMENT & IT CONSULTING</span
                   >
                   <span class="terminal-cursor" aria-hidden="true">▊</span>
                 </span>
@@ -106,20 +106,20 @@ Error generating stack: `+e.message+`
               <h1 class="hero-title">
                 <span
                   class="hero-title-line"
-                  data-text="We turn business requirements"
-                  >We turn business requirements</span
+                  data-text="Medbase Business LLC"
+                  >Medbase Business LLC</span
                 >
                 <span
                   class="hero-title-line accent"
-                  data-text="into working software."
-                  >into <em>working software</em>.</span
+                  data-text="Custom software that works."
+                  ><em>Custom software</em> that works.</span
                 >
               </h1>
               <p class="hero-sub">
-                Medbase Business LLC designs, builds, and maintains custom
-                software for companies across industries — engineered to be
-                efficient, scalable, and reliable, not just impressive on a
-                slide.
+                Medbase Business LLC is a software development and IT consulting
+                company in Athens, Georgia. We design, build, integrate, and
+                maintain custom web, cloud, AI, and enterprise software for
+                businesses worldwide.
               </p>
               <div class="hero-actions">
                 <a href="/contact" class="btn btn--primary"
@@ -1805,7 +1805,7 @@ Error generating stack: `+e.message+`
         <div class="footer-top">
           <div class="footer-brand">
             <a href="/" class="brand">
-              <img src="/assets/logo.png" alt="Medbase" class="brand-logo" />
+              <img src="/assets/logo.png" alt="Medbase Business LLC logo" class="brand-logo" />
             </a>
             <p>
               Custom software consulting for businesses that need technology to
@@ -1836,7 +1836,7 @@ Error generating stack: `+e.message+`
                   >john@medbasesolutions.com</a
                 >
               </li>
-              <li><a href="tel:+10000000000">+1 (872) 204-7723</a></li>
+              <li><a href="tel:+18722047723">+1 (706) 254-2366</a></li>
               <li>86 Venita Drive, Athens, GA 30606, USA</li>
             </ul>
           </div>
@@ -1849,11 +1849,11 @@ Error generating stack: `+e.message+`
           </div>
         </div>
       </div>
-    </footer>`,b=`Medbase Business LLC | Custom Software Development & IT Consulting`,x=`Medbase Business LLC designs, builds, and scales custom software for businesses across industries — practical, reliable, tailored technology.`,ee=`
+    </footer>`,b=`Medbase Business LLC | Software Company in Athens, GA`,x=`Medbase Business LLC is a software development and IT consulting company in Athens, Georgia, delivering custom web, cloud, AI, integration, and enterprise software solutions.`,ee=`
     <header class="site-header">
       <nav class="nav container">
         <a href="/" class="brand">
-          <img src="/assets/logo.png" alt="Medbase" class="brand-logo" />
+          <img src="/assets/logo.png" alt="Medbase Business LLC logo" class="brand-logo" />
         </a>
         <ul class="nav-links">
           <li><a href="/">Home</a></li>
@@ -2561,7 +2561,7 @@ Error generating stack: `+e.message+`
                   font-family="JetBrains Mono, monospace"
                   font-size="8"
                 >
-                  We turn business problems into working software.
+                  We turn business problems Custom software that works.
                 </text>
               </g>
               <!-- Decorative dots -->
@@ -2704,7 +2704,7 @@ Error generating stack: `+e.message+`
         <div class="footer-top">
           <div class="footer-brand">
             <a href="/" class="brand">
-              <img src="/assets/logo.png" alt="Medbase" class="brand-logo" />
+              <img src="/assets/logo.png" alt="Medbase Business LLC logo" class="brand-logo" />
             </a>
             <p>
               Custom software consulting for businesses that need technology to
@@ -2735,7 +2735,7 @@ Error generating stack: `+e.message+`
                   >john@medbasesolutions.com</a
                 >
               </li>
-              <li><a href="tel:+10000000000">+1 (872) 204-7723</a></li>
+              <li><a href="tel:+18722047723">+1 (706) 254-2366</a></li>
               <li>86 Venita Drive, Athens, GA 30606, USA</li>
             </ul>
           </div>
@@ -2748,11 +2748,11 @@ Error generating stack: `+e.message+`
           </div>
         </div>
       </div>
-    </footer>`,S=`Medbase Business LLC | Custom Software Development & IT Consulting`,C=`Medbase Business LLC is a software consulting company delivering custom, scalable, reliable technology solutions across industries.`,te=`
+    </footer>`,S=`Medbase Business LLC | Software Company in Athens, GA`,C=`Medbase Business LLC is a software consulting company delivering custom, scalable, reliable technology solutions across industries.`,te=`
     <header class="site-header">
       <nav class="nav container">
         <a href="/" class="brand">
-          <img src="/assets/logo.png" alt="Medbase" class="brand-logo" />
+          <img src="/assets/logo.png" alt="Medbase Business LLC logo" class="brand-logo" />
         </a>
         <ul class="nav-links">
           <li><a href="/">Home</a></li>
@@ -2874,7 +2874,7 @@ Error generating stack: `+e.message+`
               <div class="contact-info-item">
                 <span class="eyebrow" style="color: #4fd1c5">PHONE</span>
                 <p style="color: #fff; margin: 0">
-                  <a href="tel:+10000000000">+1 (872) 204-7723</a>
+                  <a href="tel:+18722047723">+1 (706) 254-2366</a>
                 </p>
               </div>
               <div class="contact-info-item">
@@ -2989,7 +2989,7 @@ Error generating stack: `+e.message+`
         <div class="footer-top">
           <div class="footer-brand">
             <a href="/" class="brand">
-              <img src="/assets/logo.png" alt="Medbase" class="brand-logo" />
+              <img src="/assets/logo.png" alt="Medbase Business LLC logo" class="brand-logo" />
             </a>
             <p>
               Custom software consulting for businesses that need technology to
@@ -3020,7 +3020,7 @@ Error generating stack: `+e.message+`
                   >john@medbasesolutions.com</a
                 >
               </li>
-              <li><a href="tel:+10000000000">+1 (872) 204-7723</a></li>
+              <li><a href="tel:+18722047723">+1 (706) 254-2366</a></li>
               <li>86 Venita Drive, Athens, GA 30606, USA</li>
             </ul>
           </div>
@@ -3033,4 +3033,4 @@ Error generating stack: `+e.message+`
           </div>
         </div>
       </div>
-    </footer>`,ne=`Medbase Business LLC | Custom Software Development & IT Consulting`,re=`Get in touch with Medbase Business LLC to discuss a custom software project.`,w=o((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n})),ie=o(((e,t)=>{t.exports=w()}))(),ae={"/":{markup:y,title:b,description:x},"/about":{markup:ee,title:S,description:C},"/contact":{markup:te,title:ne,description:re}};function oe(e){return e===`/index.html`?`/`:e===`/about.html`?`/about`:e===`/contact.html`?`/contact`:e.length>1&&e.endsWith(`/`)?e.slice(0,-1):e}function se(e){document.title=e.title;let t=document.querySelector(`meta[name="description"]`);if(t||(t=document.createElement(`meta`),t.name=`description`,document.head.appendChild(t)),t.content=e.description,document.querySelectorAll(`meta[name="robots"]`).forEach(e=>e.remove()),window.location.pathname===`/about`||window.location.pathname===`/contact`){let e=document.createElement(`meta`);e.name=`robots`,e.content=`noindex, follow`,document.head.appendChild(e)}}function ce(){let e=ae[oe(window.location.pathname)]??ae[`/`];return(0,_.useEffect)(()=>{se(e);let t=document.createElement(`script`);return t.src=`/script.js`,t.onload=()=>document.dispatchEvent(new Event(`DOMContentLoaded`)),document.body.appendChild(t),()=>t.remove()},[e]),(0,ie.jsx)(`div`,{dangerouslySetInnerHTML:{__html:e.markup}})}v.createRoot(document.getElementById(`root`)).render((0,ie.jsx)(ce,{}));
+    </footer>`,ne=`Medbase Business LLC | Software Company in Athens, GA`,re=`Get in touch with Medbase Business LLC to discuss a custom software project.`,w=o((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n})),ie=o(((e,t)=>{t.exports=w()}))(),ae={"/":{markup:y,title:b,description:x},"/about":{markup:ee,title:S,description:C},"/contact":{markup:te,title:ne,description:re}};function oe(e){return e===`/index.html`?`/`:e===`/about.html`?`/about`:e===`/contact.html`?`/contact`:e.length>1&&e.endsWith(`/`)?e.slice(0,-1):e}function se(e){document.title=e.title;let t=document.querySelector(`meta[name="description"]`);if(t||(t=document.createElement(`meta`),t.name=`description`,document.head.appendChild(t)),t.content=e.description,document.querySelectorAll(`meta[name="robots"]`).forEach(e=>e.remove()),window.location.pathname===`/about`||window.location.pathname===`/contact`){let e=document.createElement(`meta`);e.name=`robots`,e.content=`index, follow, max-image-preview:large`,document.head.appendChild(e)}}function ce(){let e=ae[oe(window.location.pathname)]??ae[`/`];return(0,_.useEffect)(()=>{se(e);let t=document.createElement(`script`);return t.src=`/script.js`,t.onload=()=>document.dispatchEvent(new Event(`DOMContentLoaded`)),document.body.appendChild(t),()=>t.remove()},[e]),(0,ie.jsx)(`div`,{dangerouslySetInnerHTML:{__html:e.markup}})}v.createRoot(document.getElementById(`root`)).render((0,ie.jsx)(ce,{}));
