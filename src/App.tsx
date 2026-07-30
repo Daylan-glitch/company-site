@@ -55,19 +55,22 @@ function updateMetadata(page: PageDefinition): void {
 
   description.content = page.description;
 
-  // Remove any existing robots tag
-  document.querySelectorAll('meta[name="robots"]').forEach((el) => el.remove());
-
-  // Add noindex only for About and Contact
-  if (
-    window.location.pathname === "/about" ||
-    window.location.pathname === "/contact"
-  ) {
-    const robots = document.createElement("meta");
+  let robots = document.querySelector<HTMLMetaElement>('meta[name="robots"]');
+  if (!robots) {
+    robots = document.createElement("meta");
     robots.name = "robots";
-    robots.content = "noindex, follow";
     document.head.appendChild(robots);
   }
+  robots.content = "index, follow, max-image-preview:large";
+
+  let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    document.head.appendChild(canonical);
+  }
+  const cleanPath = normalizedPathname(window.location.pathname);
+  canonical.href = `https://www.medbasesolutions.com${cleanPath === "/" ? "/" : cleanPath}`;
 }
 
 export default function App() {
